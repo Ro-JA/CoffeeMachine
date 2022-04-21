@@ -1,6 +1,19 @@
 package machine
 
+const val WATER_CUP = 200
+const val MILK_CUP = 50
+const val BEANS_CUP = 15
+
 fun main() {
+
+    ingredientCalculatorCoffee()
+
+    numberOfServings()
+
+    coffeeProcessText()
+}
+
+fun coffeeProcessText() {
     println(
         """
 Starting to make a coffee
@@ -10,33 +23,29 @@ Mixing boiled water with crushed coffee beans
 Pouring coffee into the cup
 Pouring some milk into the cup
 Coffee is ready!
-        
     """
     )
-    minCups()
 }
 
-fun howManyCups() {
-    val water = 200
-    val milk = 50
-    val beans = 15
+fun ingredientCalculatorCoffee() {
+
     println("Write how many cups of coffee you wil need")
     val cups = readLine()!!.toInt()
     println("For $cups cups of coffee you will need:")
-    println("${water * cups} ml of water")
-    println("${milk * cups} ml of milk")
-    println("${beans * cups} g of coffee beans")
+    println("${WATER_CUP * cups} ml of water")
+    println("${MILK_CUP * cups} ml of milk")
+    println("${BEANS_CUP * cups} g of coffee beans")
 
 
 }
 
-fun minCups() {
+fun numberOfServings() {
     println("Write how many ml of water the coffee machine has:")
-    val waterUser = readLine()!!.toInt() / 200
+    val waterUser = readLine()!!.toInt() / WATER_CUP
     println("Write how many ml of milk the coffee machine has:")
-    val milkUser = readLine()!!.toInt() / 50
+    val milkUser = readLine()!!.toInt() / MILK_CUP
     println("Write how many grams of coffee beans the coffee machine has:")
-    val beansUser = readLine()!!.toInt() / 15
+    val beansUser = readLine()!!.toInt() / BEANS_CUP
     println("Write how many cups of coffee you will need:")
     val cupsUser = readLine()!!.toInt()
     val cupsInMachine = listOf<Int>(waterUser, milkUser, beansUser).minOrNull()

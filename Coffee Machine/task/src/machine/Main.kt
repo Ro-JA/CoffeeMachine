@@ -13,7 +13,7 @@ Coffee is ready!
         
     """
     )
-    howManyCups()
+    minCups()
 }
 
 fun howManyCups() {
@@ -32,13 +32,20 @@ fun howManyCups() {
 
 fun minCups() {
     println("Write how many ml of water the coffee machine has:")
-    val waterUser = readLine()!!.toInt()
+    val waterUser = readLine()!!.toInt() / 200
     println("Write how many ml of milk the coffee machine has:")
-    val milkUser = readLine()!!.toInt()
+    val milkUser = readLine()!!.toInt() / 50
     println("Write how many grams of coffee beans the coffee machine has:")
-    val beansUser = readLine()!!.toInt()
+    val beansUser = readLine()!!.toInt() / 15
     println("Write how many cups of coffee you will need:")
     val cupsUser = readLine()!!.toInt()
-    if (waterUser > 200 * cupsUser)
+    val cupsInMachine = listOf<Int>(waterUser, milkUser, beansUser).minOrNull()
+    if (cupsUser == cupsInMachine) {
+        println("Yes, I can make that amount of coffee")
+    } else if (cupsUser > cupsInMachine!!) {
+        println("No, I can make only $cupsInMachine cups of coffee")
+    } else if (cupsUser < cupsInMachine) {
+        println("Yes, I can make that amount of coffee (and even ${cupsInMachine - cupsUser} more than that)")
+    }
 
 }

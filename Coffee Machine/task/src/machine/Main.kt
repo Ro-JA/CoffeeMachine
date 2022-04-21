@@ -32,7 +32,13 @@ fun howManyCups() {
 
 fun minCups() {
     println("Write how many ml of water the coffee machine has:")
-    val water = readLine()!!.toInt()
+    val waterUser = readLine()!!.toInt()
     println("Write how many ml of milk the coffee machine has:")
-    val milk = readLine()!!.toInt()
+    val milkUser = readLine()!!.toInt()
+    println("Write how many grams of coffee beans the coffee machine has:")
+    val beansUser = readLine()!!.toInt()
+    println("Write how many cups of coffee you will need:")
+    val cupsUser = readLine()!!.toInt()
+    if (waterUser > 200 * cupsUser)
+
 }

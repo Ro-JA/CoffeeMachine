@@ -29,3 +29,10 @@ fun howManyCups() {
 
 
 }
+
+fun minCups() {
+    println("Write how many ml of water the coffee machine has:")
+    val water = readLine()!!.toInt()
+    println("Write how many ml of milk the coffee machine has:")
+    val milk = readLine()!!.toInt()
+}

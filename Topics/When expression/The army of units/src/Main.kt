@@ -2,7 +2,7 @@ fun main() {
     // write your code here
     val n = readLine()!!.toInt()
     val res = when(n) {
-        1 -> "no army"
+        0 -> "no army"
         in 1..4 -> "few"
         in 5..9 -> "several"
         in 10..19 -> "pack"

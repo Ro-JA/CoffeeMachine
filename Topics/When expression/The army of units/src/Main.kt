@@ -1,7 +1,4 @@
-fun main() {
-    // write your code here
-    val n = readLine()!!.toInt()
-    val res = when(n) {
+fun main() = print(when(readLine()!!.toInt()) {
         0 -> "no army"
         in 1..4 -> "few"
         in 5..9 -> "several"
@@ -13,5 +10,4 @@ fun main() {
         in 500..999 -> "zounds"
         else -> "legion"
     }
-    println(res)
-}
+)

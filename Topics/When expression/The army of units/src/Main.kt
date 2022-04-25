@@ -1,4 +1,5 @@
-fun main() = print(when(readLine()!!.toInt()) {
+fun main() = print( 
+    when (readLine()!!.toInt()) {
         0 -> "no army"
         in 1..4 -> "few"
         in 5..9 -> "several"

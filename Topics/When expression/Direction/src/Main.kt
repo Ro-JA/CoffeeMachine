@@ -1,10 +1,17 @@
+const val UP = 1
+const val DOWN = 2
+const val LEFT = 3
+const val RIGHT = 4
+const val NO_MOVE = 0
+
+
 fun main() = print(
     when (readLine()!!.toInt()) {
-        0 -> "do not move"
-        1 -> "move up"
-        2 -> "move down"
-        3 -> "move left"
-        4 -> "move right"
-            else -> "error!"
+        NO_MOVE -> "do not move"
+        UP -> "move up"
+        DOWN -> "move down"
+        LEFT -> "move left"
+        RIGHT -> "move right"
+        else -> "error!"
     }
 )

@@ -3,11 +3,14 @@ package machine
 const val WATER_CUP_ESPRESSO = 250
 const val WATER_CUP_LATTE = 350
 const val WATER_CUP_CAPPUCCINO = 200
+const val WATER_CUP = 200
 const val MILK_CUP_LATTE = 75
 const val MILK_CUP_CAPPUCCINO = 100
+const val MILK_CUP = 50
 const val BEANS_CUP_ESPRESSO = 16
 const val BEANS_CUP_LATTE= 20
 const val BEANS_CUP_CAPPUCCINO = 12
+const val BEANS_CUP = 15
 const val PRICE_ESPRESSO = 4
 const val PRICE_LATTE = 7
 const val PRICE_CAPPUCCINO = 6
@@ -15,11 +18,8 @@ const val PRICE_CAPPUCCINO = 6
 
 fun main() {
 
-    ingredientCalculatorCoffee()
+    startCoffeeMachine()
 
-    numberOfServings()
-
-    coffeeProcessText()
 }
 
 fun coffeeProcessText() {
@@ -66,4 +66,23 @@ fun numberOfServings() {
         println("Yes, I can make that amount of coffee (and even ${cupsInMachine - cupsUser} more than that)")
     }
 
+}
+
+fun startCoffeeMachine() {
+    var water = 400
+    var milk = 540
+    var beans = 120
+    var money = 550
+    val cups = 9
+    println("""
+        The coffee machine has:
+        $water ml of water
+        $milk ml of milk
+        $beans g of coffee beans
+        $cups disposable cups
+        ${'$'}$money of money
+
+        Write action (buy, fill, take):
+    """.trimIndent())
+    val action = readLine()
 }

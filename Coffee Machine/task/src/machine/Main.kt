@@ -1,8 +1,17 @@
 package machine
 
 const val WATER_CUP_ESPRESSO = 250
-const val MILK_CUP = 50
-const val BEANS_CUP = 15
+const val WATER_CUP_LATTE = 350
+const val WATER_CUP_CAPPUCCINO = 200
+const val MILK_CUP_LATTE = 75
+const val MILK_CUP_CAPPUCCINO = 100
+const val BEANS_CUP_ESPRESSO = 16
+const val BEANS_CUP_LATTE= 20
+const val BEANS_CUP_CAPPUCCINO = 12
+const val PRICE_ESPRESSO = 4
+const val PRICE_LATTE = 7
+const val PRICE_CAPPUCCINO = 6
+
 
 fun main() {
 

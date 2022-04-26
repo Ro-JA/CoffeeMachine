@@ -1,6 +1,6 @@
 package machine
 
-const val WATER_CUP = 200
+const val WATER_CUP_ESPRESSO = 250
 const val MILK_CUP = 50
 const val BEANS_CUP = 15
 

@@ -14,11 +14,12 @@ const val BEANS_CUP = 15
 const val PRICE_ESPRESSO = 4
 const val PRICE_LATTE = 7
 const val PRICE_CAPPUCCINO = 6
-const val WATER = 400
-const val MILK = 540
-const val BEANS = 120
-const val MONEY = 550
-const val CUPS = 9
+var water = 400
+var milk = 540
+var beans = 120
+var cups = 9
+var money = 550
+
 
 
 fun main() {
@@ -73,7 +74,7 @@ fun numberOfServings() {
 }
 
 fun startCoffeeMachine() {
-    println("Write action (buy, fill, take, remaining, exit:")
+    println("Write action (buy, fill, take, remaining, exit):")
 
     val action = readLine()
     when(action) {
@@ -81,6 +82,7 @@ fun startCoffeeMachine() {
         "fill" -> fillCoffeeMachine()
         "take" -> takeMoney()
         "remaining" -> remainingIngredient()
+        "exit" -> finished()
            else -> startCoffeeMachine()
     }
 }
@@ -88,25 +90,17 @@ fun startCoffeeMachine() {
 fun remainingIngredient() {
     println("""
           The coffee machine has:
-        $WATER ml of water
-        $MILK ml of milk
-        $BEANS g of coffee beans
-        $CUPS disposable cups
-        ${'$'}$MONEY of money
+        $water ml of water
+        $milk ml of milk
+        $beans g of coffee beans
+        $cups disposable cups
+        ${'$'}$money of money
     """.trimIndent())
+    startCoffeeMachine()
 }
 
 fun takeMoney() {
-    println("""
-        I gave you ${'$'}$MONEY
-
-        The coffee machine has:
-        $WATER ml of water
-        $MILK ml of milk
-        $BEANS g of coffee beans
-        $CUPS disposable cups
-        ${'$'}0 of money
-    """.trimIndent())
+    println("I gave you ${'$'}$money")
 }
 
 fun fillCoffeeMachine() {
@@ -120,11 +114,11 @@ fun fillCoffeeMachine() {
     val addCups = readLine()!!.toInt()
     println("""
         The coffee machine has:
-        ${WATER + addWater} ml of water
-        ${MILK + addMilk} ml of milk
-        ${BEANS + addBeans} g of coffee beans
-        ${CUPS + addCups} disposable cups
-        ${'$'}$MONEY of money
+        ${water + addWater} ml of water
+        ${milk + addMilk} ml of milk
+        ${beans + addBeans} g of coffee beans
+        ${cups + addCups} disposable cups
+        ${'$'}$money of money
     """.trimIndent())
 
 }
@@ -135,27 +129,27 @@ fun buyCoffee() {
     when(selectCoffee) {
         1 -> println("""
             The coffee machine has:
-            ${WATER - WATER_CUP_ESPRESSO} ml of water
-            $MILK ml of milk
-            ${BEANS - BEANS_CUP_ESPRESSO} g of coffee beans
-            ${CUPS - 1} disposable cups
-            ${'$'}${MONEY + PRICE_ESPRESSO} of money
+            ${water - WATER_CUP_ESPRESSO} ml of water
+            $milk ml of milk
+            ${beans - BEANS_CUP_ESPRESSO} g of coffee beans
+            ${cups - 1} disposable cups
+            ${'$'}${money + PRICE_ESPRESSO} of money
         """.trimIndent())
         2 -> println("""
             The coffee machine has:
-            ${WATER - WATER_CUP_LATTE} ml of water
-            ${MILK - MILK_CUP_LATTE} ml of milk
-            ${BEANS - BEANS_CUP_LATTE} g of coffee beans
-            ${CUPS - 1} disposable cups
-            ${'$'}${MONEY + PRICE_LATTE} of money
+            ${water - WATER_CUP_LATTE} ml of water
+            ${milk- MILK_CUP_LATTE} ml of milk
+            ${beans - BEANS_CUP_LATTE} g of coffee beans
+            ${cups - 1} disposable cups
+            ${'$'}${money + PRICE_LATTE} of money
         """.trimIndent())
         3 -> println("""
             The coffee machine has:
-            ${WATER - WATER_CUP_CAPPUCCINO} ml of water
-            ${MILK - MILK_CUP_CAPPUCCINO} ml of milk
-            ${BEANS - BEANS_CUP_CAPPUCCINO} g of coffee beans
-            ${CUPS - 1} disposable cups
-            ${'$'}${MONEY + PRICE_CAPPUCCINO} of money
+            ${water - WATER_CUP_CAPPUCCINO} ml of water
+            ${milk - MILK_CUP_CAPPUCCINO} ml of milk
+            ${beans - BEANS_CUP_CAPPUCCINO} g of coffee beans
+            ${cups - 1} disposable cups
+            ${'$'}${money + PRICE_CAPPUCCINO} of money
         """.trimIndent())
 
 

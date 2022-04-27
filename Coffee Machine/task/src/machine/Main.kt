@@ -83,4 +83,12 @@ fun startCoffeeMachine() {
 
         Write action (buy, fill, take): 
     """.trimIndent())
+
+    val active = readLine()
+    when(active) {
+        "buy" -> buyCoffe()
+        "fill" -> fillCoffeeMachine()
+        "take" -> takeMoney()
+        else -> println("Write action (buy, fill, take):")
+    }
 }

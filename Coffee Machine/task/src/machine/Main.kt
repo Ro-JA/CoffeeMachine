@@ -84,11 +84,77 @@ fun startCoffeeMachine() {
         Write action (buy, fill, take): 
     """.trimIndent())
 
-    val active = readLine()
-    when(active) {
-        "buy" -> buyCoffe()
+    val action = readLine()
+    when(action) {
+        "buy" -> buyCoffee()
         "fill" -> fillCoffeeMachine()
         "take" -> takeMoney()
-        else -> println("Write action (buy, fill, take):")
+           else -> startCoffeeMachine()
+    }
+}
+
+fun takeMoney() {
+    println("""
+        I gave you ${'$'}$MONEY
+
+        The coffee machine has:
+        $WATER ml of water
+        $MILK ml of milk
+        $BEANS g of coffee beans
+        $CUPS disposable cups
+        ${'$'}0 of money
+    """.trimIndent())
+}
+
+fun fillCoffeeMachine() {
+    println("Write how many ml of water do you want to add:")
+    val addWater = readLine()!!.toInt()
+    println("Write how many ml of milk do you want to add:")
+    val addMilk = readLine()!!.toInt()
+    println("Write how many grams of coffee beans do you want to add:")
+    val addBeans = readLine()!!.toInt()
+    println("Write how many disposable cups of coffee do you want to add:")
+    val addCups = readLine()!!.toInt()
+    println("""
+        The coffee machine has:
+        ${WATER + addWater} ml of water
+        ${MILK + addMilk} ml of milk
+        ${BEANS + addBeans} g of coffee beans
+        ${CUPS + addCups} disposable cups
+        ${'$'}$MONEY of money
+    """.trimIndent())
+
+}
+
+fun buyCoffee() {
+    println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:")
+    val  selectCoffee = readLine()!!.toInt()
+    when(selectCoffee) {
+        1 -> println("""
+            The coffee machine has:
+            ${WATER - WATER_CUP_ESPRESSO} ml of water
+            $MILK ml of milk
+            ${BEANS - BEANS_CUP_ESPRESSO} g of coffee beans
+            ${CUPS - 1} disposable cups
+            ${'$'}${MONEY + PRICE_ESPRESSO} of money
+        """.trimIndent())
+        2 -> println("""
+            The coffee machine has:
+            ${WATER - WATER_CUP_LATTE} ml of water
+            ${MILK - MILK_CUP_LATTE} ml of milk
+            ${BEANS - BEANS_CUP_LATTE} g of coffee beans
+            ${CUPS - 1} disposable cups
+            ${'$'}${MONEY + PRICE_LATTE} of money
+        """.trimIndent())
+        3 -> println("""
+            The coffee machine has:
+            ${WATER - WATER_CUP_CAPPUCCINO} ml of water
+            ${MILK - MILK_CUP_CAPPUCCINO} ml of milk
+            ${BEANS - BEANS_CUP_CAPPUCCINO} g of coffee beans
+            ${CUPS - 1} disposable cups
+            ${'$'}${MONEY + PRICE_CAPPUCCINO} of money
+        """.trimIndent())
+
+
     }
 }

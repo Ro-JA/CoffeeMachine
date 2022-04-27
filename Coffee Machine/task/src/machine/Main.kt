@@ -73,24 +73,27 @@ fun numberOfServings() {
 }
 
 fun startCoffeeMachine() {
-    println("""
-        The coffee machine has:
-        $WATER ml of water
-        $MILK ml of milk
-        $BEANS g of coffee beans
-        $CUPS disposable cups
-        ${'$'}$MONEY of money
-
-        Write action (buy, fill, take): 
-    """.trimIndent())
+    println("Write action (buy, fill, take, remaining, exit:")
 
     val action = readLine()
     when(action) {
         "buy" -> buyCoffee()
         "fill" -> fillCoffeeMachine()
         "take" -> takeMoney()
+        "remaining" -> remainingIngredient()
            else -> startCoffeeMachine()
     }
+}
+
+fun remainingIngredient() {
+    println("""
+          The coffee machine has:
+        $WATER ml of water
+        $MILK ml of milk
+        $BEANS g of coffee beans
+        $CUPS disposable cups
+        ${'$'}$MONEY of money
+    """.trimIndent())
 }
 
 fun takeMoney() {

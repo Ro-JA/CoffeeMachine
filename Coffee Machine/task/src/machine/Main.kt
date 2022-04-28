@@ -1,5 +1,9 @@
 package machine
 
+import java.lang.System.exit
+import java.lang.System.runFinalization
+import kotlin.system.exitProcess
+
 const val WATER_CUP_ESPRESSO = 250
 const val WATER_CUP_LATTE = 350
 const val WATER_CUP_CAPPUCCINO = 200
@@ -82,7 +86,7 @@ fun startCoffeeMachine() {
         "fill" -> fillCoffeeMachine()
         "take" -> takeMoney()
         "remaining" -> remainingIngredient()
-        "exit" -> finished()
+        "exit" -> runFinalization()
            else -> startCoffeeMachine()
     }
 }
@@ -127,31 +131,8 @@ fun buyCoffee() {
     println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:")
     val  selectCoffee = readLine()!!.toInt()
     when(selectCoffee) {
-        1 -> println("""
-            The coffee machine has:
-            ${water - WATER_CUP_ESPRESSO} ml of water
-            $milk ml of milk
-            ${beans - BEANS_CUP_ESPRESSO} g of coffee beans
-            ${cups - 1} disposable cups
-            ${'$'}${money + PRICE_ESPRESSO} of money
-        """.trimIndent())
-        2 -> println("""
-            The coffee machine has:
-            ${water - WATER_CUP_LATTE} ml of water
-            ${milk- MILK_CUP_LATTE} ml of milk
-            ${beans - BEANS_CUP_LATTE} g of coffee beans
-            ${cups - 1} disposable cups
-            ${'$'}${money + PRICE_LATTE} of money
-        """.trimIndent())
-        3 -> println("""
-            The coffee machine has:
-            ${water - WATER_CUP_CAPPUCCINO} ml of water
-            ${milk - MILK_CUP_CAPPUCCINO} ml of milk
-            ${beans - BEANS_CUP_CAPPUCCINO} g of coffee beans
-            ${cups - 1} disposable cups
-            ${'$'}${money + PRICE_CAPPUCCINO} of money
-        """.trimIndent())
+        1 -> if (water > WATER_CUP_ESPRESSO) {
 
-
+        }
     }
 }

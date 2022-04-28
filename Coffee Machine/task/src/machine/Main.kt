@@ -129,10 +129,21 @@ fun fillCoffeeMachine() {
 
 fun buyCoffee() {
     println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:")
-    val  selectCoffee = readLine()!!.toInt()
-    when(selectCoffee) {
-        1 -> if (water > WATER_CUP_ESPRESSO) {
-
+    when(readLine()!!.toInt()) {
+        1 -> if (water > WATER_CUP_ESPRESSO && beans > BEANS_CUP_ESPRESSO && cups > 1) {
+            println("I have enough resources, making you a coffee!")
+            water -= WATER_CUP_ESPRESSO
+            beans -= BEANS_CUP_ESPRESSO
+            cups --
+        } else {
+            if (water < WATER_CUP_LATTE) {
+                println("Sorry, not enough water!")
+            } else if (beans < BEANS_CUP_ESPRESSO) {
+                println("Sorry, not enough beans")
+            } else {
+                println("Sorry, not enough cups")
+            }
         }
+        2 -> if (water > WATER_CUP_LATTE &&)
     }
 }

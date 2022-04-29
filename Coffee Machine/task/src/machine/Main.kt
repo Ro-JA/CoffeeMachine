@@ -12,7 +12,7 @@ const val MILK_CUP_LATTE = 75
 const val MILK_CUP_CAPPUCCINO = 100
 const val MILK_CUP = 50
 const val BEANS_CUP_ESPRESSO = 16
-const val BEANS_CUP_LATTE= 20
+const val BEANS_CUP_LATTE = 20
 const val BEANS_CUP_CAPPUCCINO = 12
 const val BEANS_CUP = 15
 const val PRICE_ESPRESSO = 4
@@ -25,10 +25,9 @@ var cups = 9
 var money = 550
 
 
-
 fun main() {
 
-   startCoffeeMachine()
+    startCoffeeMachine()
 }
 
 fun coffeeProcessText() {
@@ -81,69 +80,119 @@ fun startCoffeeMachine() {
     println("Write action (buy, fill, take, remaining, exit):")
 
     val action = readLine()
-    when(action) {
+    when (action) {
         "buy" -> buyCoffee()
         "fill" -> fillCoffeeMachine()
         "take" -> takeMoney()
         "remaining" -> remainingIngredient()
-        "exit" -> runFinalization()
-           else -> startCoffeeMachine()
+        "exit" -> exit(0)
+        else -> startCoffeeMachine()
     }
 }
 
 fun remainingIngredient() {
-    println("""
+    println(
+        """
           The coffee machine has:
         $water ml of water
         $milk ml of milk
         $beans g of coffee beans
         $cups disposable cups
         ${'$'}$money of money
-    """.trimIndent())
+    """.trimIndent()
+    )
     startCoffeeMachine()
 }
 
 fun takeMoney() {
     println("I gave you ${'$'}$money")
+    money = 0
+
+    startCoffeeMachine()
 }
 
 fun fillCoffeeMachine() {
     println("Write how many ml of water do you want to add:")
     val addWater = readLine()!!.toInt()
+    water += addWater
     println("Write how many ml of milk do you want to add:")
     val addMilk = readLine()!!.toInt()
+    milk += addMilk
     println("Write how many grams of coffee beans do you want to add:")
     val addBeans = readLine()!!.toInt()
+    beans += addBeans
     println("Write how many disposable cups of coffee do you want to add:")
     val addCups = readLine()!!.toInt()
-    println("""
-        The coffee machine has:
-        ${water + addWater} ml of water
-        ${milk + addMilk} ml of milk
-        ${beans + addBeans} g of coffee beans
-        ${cups + addCups} disposable cups
-        ${'$'}$money of money
-    """.trimIndent())
+    cups += addCups
 
+    startCoffeeMachine()
 }
 
 fun buyCoffee() {
-    println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:")
-    when(readLine()!!.toInt()) {
-        1 -> if (water > WATER_CUP_ESPRESSO && beans > BEANS_CUP_ESPRESSO && cups > 1) {
-            println("I have enough resources, making you a coffee!")
-            water -= WATER_CUP_ESPRESSO
-            beans -= BEANS_CUP_ESPRESSO
-            cups --
-        } else {
-            if (water < WATER_CUP_LATTE) {
-                println("Sorry, not enough water!")
-            } else if (beans < BEANS_CUP_ESPRESSO) {
-                println("Sorry, not enough beans")
+    println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:")
+    val userSelection = readLine()
+    if (userSelection == "back") {
+        startCoffeeMachine()
+    } else {
+        when (userSelection!!.toInt()) {
+
+            1 -> if (water > WATER_CUP_ESPRESSO && beans > BEANS_CUP_ESPRESSO && cups >= 1) {
+                println("I have enough resources, making you a coffee!")
+                water -= WATER_CUP_ESPRESSO
+                beans -= BEANS_CUP_ESPRESSO
+                cups--
+                money += PRICE_ESPRESSO
             } else {
-                println("Sorry, not enough cups")
+                if (water < WATER_CUP_ESPRESSO) {
+                    println("Sorry, not enough water!")
+                } else if (beans < BEANS_CUP_ESPRESSO) {
+                    println("Sorry, not enough beans")
+                } else {
+                    println("Sorry, not enough cups")
+                }
+            }
+
+            2 -> if (water > WATER_CUP_LATTE && milk > MILK_CUP_LATTE && beans > BEANS_CUP_LATTE && cups > 1) {
+                println("I have enough resources, making you a coffee!")
+                water -= WATER_CUP_LATTE
+                milk -= MILK_CUP_LATTE
+                beans -= BEANS_CUP_LATTE
+                cups--
+                money += PRICE_LATTE
+            } else {
+                if (water < WATER_CUP_LATTE) {
+                    println("Sorry, not enough water!")
+                } else if (milk < MILK_CUP_LATTE) {
+                    println("Sorry, not enough milk!")
+                } else if (beans < BEANS_CUP_LATTE) {
+                    println("Sorry, not enough beans!")
+                } else {
+                    println("Sorry, not enough cups")
+                }
+            }
+
+            3 -> if (water > WATER_CUP_CAPPUCCINO && milk > MILK_CUP_CAPPUCCINO && beans > BEANS_CUP_CAPPUCCINO
+                && cups >= 1
+            ) {
+                println("I have enough resources, making you a coffee!")
+                water -= WATER_CUP_CAPPUCCINO
+                milk -= MILK_CUP_CAPPUCCINO
+                beans -= BEANS_CUP_CAPPUCCINO
+                cups--
+                money += PRICE_CAPPUCCINO
+            } else {
+                if (water < WATER_CUP_CAPPUCCINO) {
+                    println("Sorry, not enough water!")
+                } else if (milk < MILK_CUP_CAPPUCCINO) {
+                    println("Sorry, not enough milk!")
+                } else if (beans < BEANS_CUP_CAPPUCCINO) {
+                    println("Sorry, not enough beans!")
+                } else {
+                    println("Sorry, not enough cups")
+                }
             }
         }
-        2 -> if (water > WATER_CUP_LATTE &&)
     }
+
+    startCoffeeMachine()
 }

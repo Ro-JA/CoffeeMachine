@@ -14,6 +14,8 @@
       <module name="Coffee_Machine.Topics-Declaring_classes-Complex_numbers.main" target="11" />
       <module name="Coffee_Machine.Topics-Declaring_classes-Possible_properties_types.main" target="11" />
       <module name="Coffee_Machine.Topics-Declaring_classes-Theory.main" target="11" />
+      <module name="Coffee_Machine.Topics-Functional_decomposition-Create_a_full_name.main" target="11" />
+      <module name="Coffee_Machine.Topics-Functional_decomposition-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-When_expression-Direction.main" target="11" />
       <module name="Coffee_Machine.Topics-When_expression-From_string_to_a_number.main" target="11" />
       <module name="Coffee_Machine.Topics-When_expression-FTN-Numbers.main" target="11" />

@@ -23,6 +23,17 @@
       <module name="Coffee_Machine.Topics-When_expression-Harry_Potter.main" target="11" />
       <module name="Coffee_Machine.Topics-When_expression-The_army_of_units.main" target="11" />
       <module name="Coffee_Machine.Topics-When_expression-Theory.main" target="11" />
+      <module name="Coffee_Machine.Topics-While_loops-Balance_checker.main" target="11" />
+      <module name="Coffee_Machine.Topics-While_loops-Choose_the_correct_ones.main" target="11" />
+      <module name="Coffee_Machine.Topics-While_loops-Squares_of_natural_numbers.main" target="11" />
+      <module name="Coffee_Machine.Topics-While_loops-The_first_position_of_the_largest_element.main" target="11" />
+      <module name="Coffee_Machine.Topics-While_loops-The_largest_element.main" target="11" />
+      <module name="Coffee_Machine.Topics-While_loops-The_length_of_the_sequence.main" target="11" />
+      <module name="Coffee_Machine.Topics-While_loops-The_sequence_1_2_2_3_3_3.main" target="11" />
+      <module name="Coffee_Machine.Topics-While_loops-The_sum_of_elements.main" target="11" />
+      <module name="Coffee_Machine.Topics-While_loops-Theory.main" target="11" />
+      <module name="Coffee_Machine.Topics-While_loops-What_does_the_code_print.main" target="11" />
+      <module name="Coffee_Machine.Topics-While_loops-What_does_the_code_print__1_.main" target="11" />
       <module name="Coffee_Machine.util.main" target="11" />
     </bytecodeTargetLevel>
   </component>

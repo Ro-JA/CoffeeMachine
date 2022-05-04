@@ -14,4 +14,7 @@ fun getFullNames() {
 }
 
 // implement your function here
-fun createFullName(firstName: String, lastName: String) = "$firstName $lastName"
+fun createFullName(firstName: String, lastName: String): String {
+    val fullName = "$firstName $lastName"
+    return fullName
+}

@@ -3,6 +3,6 @@ fun main() {
     var i = 1
     do {
         println(i * i)
-        i+=1
-    } while (n >= i*i)
+        i += 1
+    } while (n >= i * i)
 }

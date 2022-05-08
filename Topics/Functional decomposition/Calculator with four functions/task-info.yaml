@@ -16,19 +16,8 @@ files:
     fun multiplyTwoNumbers...
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/12673#comment
-status: Failed
+status: Solved
 feedback:
-  message: |+
-    Failed test #1 of 7. Wrong answer
-
-    This is a sample test from the problem statement!
-
-    Test input:
-    1 + 2
-    Correct output:
-    3
-
-    Your code output:
-
-  time: Sun, 08 May 2022 10:00:36 UTC
+  message: <html>Correct solution</html>
+  time: Sun, 08 May 2022 10:10:09 UTC
 record: -1

@@ -1,0 +1,20 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: "fun main() {    \n    // write your code here\n}"
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/4606#comment
+status: Failed
+feedback:
+  message: "Failed test #1 of 27. Runtime error\n\nThis is a sample test from the\
+    \ problem statement!\n\nTest input:\nrectangle\n4\n10\nCorrect output:\n40.0\n\
+    \nYour code output:\n\n\nError:\nException in thread \"main\" kotlin.io.ReadAfterEOFException:\
+    \ EOF has already been reached\n\tat kotlin.io.ConsoleKt.readln(Console.kt:152)\n\
+    \tat MainKt.main(main.kt:5)\n\tat MainKt.main(main.kt)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native\
+    \ Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\
+    \tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\
+    \tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.jetbrains.kotlin.runner.AbstractRunner.run(runners.kt:70)\n\
+    \tat org.jetbrains.kotlin.runner.Main.run(Main.kt:188)\n\tat org.jetbrains.kotlin.runner.Main.main(Main.kt:198)\n"
+  time: Mon, 09 May 2022 15:25:02 UTC
+record: -1

@@ -18,11 +18,14 @@
       <module name="Coffee_Machine.Topics-Declaring_classes-Pseudo-constructor.main" target="11" />
       <module name="Coffee_Machine.Topics-Declaring_classes-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Declaring_classes-True_statements.main" target="11" />
+      <module name="Coffee_Machine.Topics-Default_arguments-Gratuity.main" target="11" />
+      <module name="Coffee_Machine.Topics-Default_arguments-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-Calculator_with_four_functions.main" target="11" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-Create_a_full_name.main" target="11" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-Decompose_a_math_function.main" target="11" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-When_expression-Direction.main" target="11" />
+      <module name="Coffee_Machine.Topics-When_expression-Floor-space_of_the_room.main" target="11" />
       <module name="Coffee_Machine.Topics-When_expression-From_string_to_a_number.main" target="11" />
       <module name="Coffee_Machine.Topics-When_expression-FTN-Numbers.main" target="11" />
       <module name="Coffee_Machine.Topics-When_expression-Harry_Potter.main" target="11" />

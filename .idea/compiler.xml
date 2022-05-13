@@ -25,6 +25,7 @@
       <module name="Coffee_Machine.Topics-Default_arguments-Gratuity.main" target="11" />
       <module name="Coffee_Machine.Topics-Default_arguments-Invocations.main" target="11" />
       <module name="Coffee_Machine.Topics-Default_arguments-Polynomial.main" target="11" />
+      <module name="Coffee_Machine.Topics-Default_arguments-Print_Username.main" target="11" />
       <module name="Coffee_Machine.Topics-Default_arguments-Summation.main" target="11" />
       <module name="Coffee_Machine.Topics-Default_arguments-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-Calculator_with_four_functions.main" target="11" />

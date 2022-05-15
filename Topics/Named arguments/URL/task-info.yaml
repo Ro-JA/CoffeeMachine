@@ -1,0 +1,22 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: |-
+    fun url(host: String, port: Int): String {
+        // TODO
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7864#comment
+status: Failed
+feedback:
+  message: |
+    Compilation error
+    main.kt:6:34: error: no value passed for parameter 'port'
+        println(url(host = hostString))
+                                     ^
+    main.kt:7:34: error: no value passed for parameter 'host'
+        println(url(port = postString))
+                                     ^
+  time: Sun, 15 May 2022 14:27:29 UTC
+record: -1

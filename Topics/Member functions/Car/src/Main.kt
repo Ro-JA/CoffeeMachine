@@ -1,11 +1,14 @@
+const val FIVE = 5
+
 class Car(val make: String, val year: Int) {
     var speed: Int = 0
-    fun accelerate(){
-        speed += 5
+    fun accelerate() {
+        speed += FIVE
     }
+
     fun decelerate() {
-        if (speed > 5) {
-            speed -= 5
+        if (speed > FIVE) {
+            speed -= FIVE
         } else {
             speed = 0
         }

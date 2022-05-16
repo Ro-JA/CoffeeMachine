@@ -34,6 +34,8 @@
       <module name="Coffee_Machine.Topics-Functional_decomposition-Create_a_full_name.main" target="16" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-Decompose_a_math_function.main" target="16" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-Theory.main" target="16" />
+      <module name="Coffee_Machine.Topics-Member_functions-Car.main" target="16" />
+      <module name="Coffee_Machine.Topics-Member_functions-Theory.main" target="16" />
       <module name="Coffee_Machine.Topics-Named_arguments-Correct_invocations.main" target="16" />
       <module name="Coffee_Machine.Topics-Named_arguments-Declarations.main" target="16" />
       <module name="Coffee_Machine.Topics-Named_arguments-Determine_the_result.main" target="16" />

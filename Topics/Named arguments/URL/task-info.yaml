@@ -8,15 +8,8 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/7864#comment
-status: Failed
+status: Solved
 feedback:
-  message: |
-    Compilation error
-    main.kt:6:34: error: no value passed for parameter 'port'
-        println(url(host = hostString))
-                                     ^
-    main.kt:7:34: error: no value passed for parameter 'host'
-        println(url(port = postString))
-                                     ^
-  time: Sun, 15 May 2022 14:27:29 UTC
+  message: <html>Correct solution</html>
+  time: Mon, 16 May 2022 00:21:07 UTC
 record: -1

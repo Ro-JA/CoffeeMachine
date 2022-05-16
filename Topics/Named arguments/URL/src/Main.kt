@@ -1,1 +1,1 @@
-fun url(host: String, port: Int) = "https://$host:$port"
+fun url(host: String = "localhost", port: Int = 443) = "https://$host:$port"

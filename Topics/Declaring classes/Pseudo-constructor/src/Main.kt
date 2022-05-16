@@ -4,7 +4,7 @@ class Point3D {
     var z: Int = 0
 }
 
-fun createPoint(x: Int, y: Int, z: Int) : Point3D {
+fun createPoint(x: Int, y: Int, z: Int): Point3D {
     val point3D = Point3D()
     point3D.x = x
     point3D.y = y

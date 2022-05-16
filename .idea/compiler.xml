@@ -51,6 +51,8 @@
       <module name="Coffee_Machine.Topics-When_expression-From_string_to_a_number.main" target="16" />
       <module name="Coffee_Machine.Topics-When_expression-FTN-Numbers.main" target="16" />
       <module name="Coffee_Machine.Topics-When_expression-Harry_Potter.main" target="16" />
+      <module name="Coffee_Machine.Topics-When_expression-Statements.main" target="16" />
+      <module name="Coffee_Machine.Topics-When_expression-Strings_as_objects.main" target="16" />
       <module name="Coffee_Machine.Topics-When_expression-The_army_of_units.main" target="16" />
       <module name="Coffee_Machine.Topics-When_expression-The_number_of_digits.main" target="16" />
       <module name="Coffee_Machine.Topics-When_expression-Theory.main" target="16" />

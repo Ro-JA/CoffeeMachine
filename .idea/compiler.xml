@@ -10,7 +10,12 @@
       <module name="Coffee_Machine.Coffee_Machine-task-build-test-results.main" target="16" />
       <module name="Coffee_Machine.Coffee_Machine-task-build-tmp.main" target="16" />
       <module name="Coffee_Machine.Coffee_Machine-task.main" target="16" />
+      <module name="Coffee_Machine.Topics-Constructors-Class_members_to_initialize_objects.main" target="16" />
+      <module name="Coffee_Machine.Topics-Constructors-Correct_declaration.main" target="16" />
+      <module name="Coffee_Machine.Topics-Constructors-Find_the_error.main" target="16" />
+      <module name="Coffee_Machine.Topics-Constructors-How_many_primary_constructors.main" target="16" />
       <module name="Coffee_Machine.Topics-Constructors-Pets.main" target="16" />
+      <module name="Coffee_Machine.Topics-Constructors-Point2D.main" target="16" />
       <module name="Coffee_Machine.Topics-Constructors-Theory.main" target="16" />
       <module name="Coffee_Machine.Topics-Declaring_classes-Area_printer.main" target="16" />
       <module name="Coffee_Machine.Topics-Declaring_classes-Complex_numbers.main" target="16" />

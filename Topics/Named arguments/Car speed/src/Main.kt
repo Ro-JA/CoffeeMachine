@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
     }
 }
 
-fun speedCheek(n: Int,n1: Int) {
+fun speedCheek(n: Int, n1: Int) {
     if (n <= n1) {
         println("Within the limit")
     } else {

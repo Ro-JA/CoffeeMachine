@@ -7,3 +7,4 @@ content:
 - Operations on val objects
 - Operations on var objects
 - Pseudo-constructor
+- Composition

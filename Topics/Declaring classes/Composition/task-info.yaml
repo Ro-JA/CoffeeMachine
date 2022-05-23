@@ -1,0 +1,37 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: // write the classes here
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/6209#comment
+status: Failed
+feedback:
+  message: |
+    Compilation error
+    main.kt:25:39: error: no value passed for parameter 'primaryOs'
+        val dualBoot: DualBoot = DualBoot()
+                                          ^
+    main.kt:25:39: error: no value passed for parameter 'secondaryOs'
+        val dualBoot: DualBoot = DualBoot()
+                                          ^
+    main.kt:26:26: error: type mismatch: inferred type is OperatingSystem but String was expected
+        dualBoot.primaryOs = os1
+                             ^
+    main.kt:27:28: error: type mismatch: inferred type is OperatingSystem but String was expected
+        dualBoot.secondaryOs = os2
+                               ^
+    main.kt:29:9: error: operator '!==' cannot be applied to 'String' and 'OperatingSystem'
+        if (dualBoot.primaryOs !== os1 || dualBoot.secondaryOs !== os2) {
+            ^
+    main.kt:29:39: error: operator '!==' cannot be applied to 'String' and 'OperatingSystem'
+        if (dualBoot.primaryOs !== os1 || dualBoot.secondaryOs !== os2) {
+                                          ^
+    main.kt:34:9: error: smart cast to 'OperatingSystem' is impossible, because 'dualBoot.primaryOs' is a mutable property that could have been changed by this time
+        if (dualBoot.primaryOs.name !== os1Name) {
+            ^
+    main.kt:39:9: error: smart cast to 'OperatingSystem' is impossible, because 'dualBoot.secondaryOs' is a mutable property that could have been changed by this time
+        if (dualBoot.secondaryOs.name !== os2Name) {
+            ^
+  time: Mon, 23 May 2022 14:10:16 UTC
+record: -1

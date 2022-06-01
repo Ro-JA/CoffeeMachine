@@ -61,6 +61,7 @@
       <module name="Coffee_Machine.Topics-Named_arguments-Invocations.main" target="16" />
       <module name="Coffee_Machine.Topics-Named_arguments-Theory.main" target="16" />
       <module name="Coffee_Machine.Topics-Named_arguments-URL.main" target="16" />
+      <module name="Coffee_Machine.Topics-When_expression-A_simple_calculator.main" target="16" />
       <module name="Coffee_Machine.Topics-When_expression-Direction.main" target="16" />
       <module name="Coffee_Machine.Topics-When_expression-Floor-space_of_the_room.main" target="16" />
       <module name="Coffee_Machine.Topics-When_expression-From_string_to_a_number.main" target="16" />

@@ -8,7 +8,7 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleJvm" value="java version &quot;11.0.14+1&quot;" />
+        <option name="gradleJvm" value="#JAVA_INTERNAL" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -71,6 +71,14 @@
             <option value="$PROJECT_DIR$/Topics/Named arguments/Invocations" />
             <option value="$PROJECT_DIR$/Topics/Named arguments/Theory" />
             <option value="$PROJECT_DIR$/Topics/Named arguments/URL" />
+            <option value="$PROJECT_DIR$/Topics/String basics/Addition and multiplication" />
+            <option value="$PROJECT_DIR$/Topics/String basics/Appending numbers to strings" />
+            <option value="$PROJECT_DIR$/Topics/String basics/Concatenation" />
+            <option value="$PROJECT_DIR$/Topics/String basics/Correct ways to create a string" />
+            <option value="$PROJECT_DIR$/Topics/String basics/I'm learning Kotlin" />
+            <option value="$PROJECT_DIR$/Topics/String basics/JSON" />
+            <option value="$PROJECT_DIR$/Topics/String basics/The string size" />
+            <option value="$PROJECT_DIR$/Topics/String basics/Theory" />
             <option value="$PROJECT_DIR$/Topics/When expression/A simple calculator" />
             <option value="$PROJECT_DIR$/Topics/When expression/Direction" />
             <option value="$PROJECT_DIR$/Topics/When expression/FTN-Numbers" />

@@ -21,6 +21,7 @@
               </args>
             </stringArg>
             <stringArg name="destination" arg="$MODULE_DIR$/../../../../../Topics/While loops/What does the code print/build/classes/kotlin/main" />
+            <stringArg name="jvmTarget" arg="1.8" />
             <stringArg name="moduleName" arg="Topics-While_loops-What_does_the_code_print" />
             <stringArg name="apiVersion" arg="1.6" />
             <stringArg name="languageVersion" arg="1.6" />
@@ -43,7 +44,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_16">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
     <output url="file://$MODULE_DIR$/../../../../../Topics/While loops/What does the code print/out/production/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../../../Topics/While loops/What does the code print/src">

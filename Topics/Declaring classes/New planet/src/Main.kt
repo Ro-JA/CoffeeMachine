@@ -1,1 +1,5 @@
-class Planet(val start: String = "Unknown Star",val mass: Double = 1.0, val numberOfSatellites: Int = 1)
+class Planet {
+    var starorrect: String = "Unknown Star"
+    var mass: Double = 1.0
+    var numberOfSatellites: Int = 1
+}

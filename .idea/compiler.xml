@@ -86,6 +86,7 @@
       <module name="Coffee_Machine.Topics-When_expression-From_string_to_a_number.main" target="11" />
       <module name="Coffee_Machine.Topics-When_expression-FTN-Numbers.main" target="11" />
       <module name="Coffee_Machine.Topics-When_expression-Harry_Potter.main" target="11" />
+      <module name="Coffee_Machine.Topics-When_expression-Just_checking.main" target="11" />
       <module name="Coffee_Machine.Topics-When_expression-Statements.main" target="11" />
       <module name="Coffee_Machine.Topics-When_expression-Strings_as_objects.main" target="11" />
       <module name="Coffee_Machine.Topics-When_expression-The_army_of_units.main" target="11" />

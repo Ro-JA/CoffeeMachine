@@ -1,0 +1,16 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: // write your code here
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/20468#comment
+status: Failed
+feedback:
+  message: |
+    Compilation error
+    main.kt:5:52: error: unresolved reference: star
+                "${planet.numberOfSatellites} ${planet.star} ${planet.mass}")
+                                                       ^
+  time: Tue, 19 Jul 2022 03:30:49 UTC
+record: -1

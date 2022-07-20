@@ -48,8 +48,10 @@
       <module name="Coffee_Machine.Topics-Invoking_functions-The_magic_of_println.main" target="11" />
       <module name="Coffee_Machine.Topics-Invoking_functions-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Member_functions-Application_as_a_class.main" target="11" />
+      <module name="Coffee_Machine.Topics-Member_functions-Bugs_in_a_vinyl_store.main" target="11" />
       <module name="Coffee_Machine.Topics-Member_functions-Car.main" target="11" />
       <module name="Coffee_Machine.Topics-Member_functions-Keyword_to_declare_a_member_function.main" target="11" />
+      <module name="Coffee_Machine.Topics-Member_functions-Operations.main" target="11" />
       <module name="Coffee_Machine.Topics-Member_functions-Patient_needs_a_doctor.main" target="11" />
       <module name="Coffee_Machine.Topics-Member_functions-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Member_functions-Volume_of_a_cube.main" target="11" />

@@ -1,5 +1,5 @@
 // fix it
-class VinylStore(vinyl: String) {
+class VinylStore(var vinyl: String) {
     fun printVinyl() {
         println(this.vinyl)
     }

@@ -64,6 +64,16 @@
       <module name="Coffee_Machine.Topics-Named_arguments-Invocations.main" target="11" />
       <module name="Coffee_Machine.Topics-Named_arguments-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Named_arguments-URL.main" target="11" />
+      <module name="Coffee_Machine.Topics-Ranges-At_least_one.main" target="11" />
+      <module name="Coffee_Machine.Topics-Ranges-Between_two_numbers.main" target="11" />
+      <module name="Coffee_Machine.Topics-Ranges-Check_the_value.main" target="11" />
+      <module name="Coffee_Machine.Topics-Ranges-Check_the_value__1_.main" target="11" />
+      <module name="Coffee_Machine.Topics-Ranges-Correct_statements.main" target="11" />
+      <module name="Coffee_Machine.Topics-Ranges-How_to_create_a_range.main" target="11" />
+      <module name="Coffee_Machine.Topics-Ranges-Job.main" target="11" />
+      <module name="Coffee_Machine.Topics-Ranges-Theory.main" target="11" />
+      <module name="Coffee_Machine.Topics-Ranges-Within_a_range.main" target="11" />
+      <module name="Coffee_Machine.Topics-Ranges-Within_both_ranges.main" target="11" />
       <module name="Coffee_Machine.Topics-Repeating_blocks-Counting_positive_numbers.main" target="11" />
       <module name="Coffee_Machine.Topics-Repeating_blocks-Grades.main" target="11" />
       <module name="Coffee_Machine.Topics-Repeating_blocks-How_many_times_it_repeats.main" target="11" />

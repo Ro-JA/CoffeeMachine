@@ -4,5 +4,5 @@ fun main() {
     val inputTree = readLine()!!.toInt()
     val inputFour = readLine()!!.toInt()
     val inputFive = readLine()!!.toInt()
-    println(inputFive in inputOne..inputTwo|| inputFive in inputTree..inputFour)
+    println(inputFive in inputOne..inputTwo || inputFive in inputTree..inputFour)
 }

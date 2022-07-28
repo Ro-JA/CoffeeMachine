@@ -9,5 +9,9 @@ files:
     \ lines above        \n\nfun greetNeo() = greetUser(...)"
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/7863#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: |
+    Failed. Wrong answer
+  time: Wed, 27 Jul 2022 06:00:51 UTC
 record: -1

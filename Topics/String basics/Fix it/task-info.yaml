@@ -6,5 +6,8 @@ files:
   text: val name = 10 + "years' + "ago" we were "s in London"
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/20627#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Thu, 28 Jul 2022 14:05:38 UTC
 record: -1

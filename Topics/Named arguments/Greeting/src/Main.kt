@@ -13,4 +13,4 @@ fun greetUser(
 }
 // do not change lines above        
 
-fun greetNeo() = greetUser(greet = "Hello", admin = true, smith = true, name =  "Mr. Anderson", honorific = "  ")
+fun greetNeo() = greetUser(name = "Anderson", honorific = "Mr.", greet = "Hello")

@@ -1,3 +1,8 @@
-class OperatingSystem(var name: String = "loud")
+class OperatingSystem {
+    var name: String = "loud"
+}
 
-class DualBoot(var primaryOs: OperatingSystem = OperatingSystem(), var secondaryOs: OperatingSystem = OperatingSystem())
+class DualBoot {
+    var primaryOs: OperatingSystem = OperatingSystem()
+    var secondaryOs: OperatingSystem = OperatingSystem()
+}

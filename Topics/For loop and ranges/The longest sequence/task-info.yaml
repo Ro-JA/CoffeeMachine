@@ -9,4 +9,29 @@ files:
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/4702#comment
 status: Failed
+feedback:
+  message: |
+    Failed test #1 of 7. Wrong answer
+
+    This is a sample test from the problem statement!
+
+    Test input:
+    10
+    1
+    2
+    4
+    1
+    2
+    2
+    5
+    7
+    4
+    3
+
+    Correct output:
+    5
+
+    Your code output:
+    6
+  time: Fri, 05 Aug 2022 17:34:10 UTC
 record: -1

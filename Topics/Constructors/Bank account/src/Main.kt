@@ -1,6 +1,3 @@
-class BankAccount {
-    var deposited: Long = 100
-    var withdrawn: Long = 100
-    var balance:Long = 1000
-
+class BankAccount(val deposited: Long, val withdrawn: Long ) {
+    var balance:Long = deposited - withdrawn
 }

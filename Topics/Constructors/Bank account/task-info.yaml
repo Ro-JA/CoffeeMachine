@@ -5,5 +5,15 @@ files:
   text: // write the BankAccount class here
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/6243#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: |
+    Compilation error
+    main.kt:12:31: error: too many arguments for public constructor BankAccount() defined in BankAccount
+        val account = BankAccount(deposited, withdrawn)
+                                  ^
+    main.kt:12:42: error: too many arguments for public constructor BankAccount() defined in BankAccount
+        val account = BankAccount(deposited, withdrawn)
+                                             ^
+  time: Sat, 13 Aug 2022 12:20:43 UTC
 record: -1

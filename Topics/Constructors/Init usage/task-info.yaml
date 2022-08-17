@@ -12,5 +12,8 @@ files:
     class ByteTimer(var time: Int) {}
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/7371#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Wed, 17 Aug 2022 13:48:44 UTC
 record: -1

@@ -1,3 +1,4 @@
 fun main() {
-    // write here
+    val strNum = readLine()!!.toInt()
+    println("The obtained value is $strNum and its Int representation is ${strNum/2}")
 }

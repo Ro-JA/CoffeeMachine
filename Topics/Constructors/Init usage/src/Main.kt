@@ -4,12 +4,12 @@ fun main() {
     println(timer.time)
 }
 
-class ByteTimer(var time: Int) {
+data class ByteTimer(var time: Int) {
     init {
-        if (time < -128) {
-            time = -128
-        } else if (time > 127) {
-            time = 127
+        time = when (true) {
+            time < Byte.MIN_VALUE.toInt() -> Byte.MIN_VALUE.toInt()
+            time > Byte.MAX_VALUE.toInt() -> Byte.MAX_VALUE.toInt()
+            else -> time
         }
     }
 }

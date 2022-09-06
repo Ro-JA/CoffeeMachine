@@ -1,5 +1,5 @@
 fun main() {
     val input = readln()!!.toInt()
-    println(input in 1..10)
+    println(if (input in 1..10) false else true)
 
 }

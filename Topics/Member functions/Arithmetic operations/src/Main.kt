@@ -1,8 +1,8 @@
 import kotlin.math.abs
 
-class ArithmeticOperation(val x: Int, val y: Int) {
+class ArithmeticOperation(var x: Int, var y: Int) {
     fun addition() = y + x
-    fun subtraction() = abs(y - x)
+    fun subtraction() = abs(x - y)
     fun  multiplication() = x * y
     fun division() = x / y
 }
